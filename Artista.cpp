@@ -1,14 +1,14 @@
 #include "Artista.h"
 #include "Cancion.h"
 
-#include<iostream>
+#include <iostream>
 using std::cout;
 using std::endl;
 
-#include<vector>
+#include <vector>
 using std::vector;
 
-#include<string>
+#include <string>
 using std::string;
 
 Artista::Artista(){
@@ -18,6 +18,11 @@ Artista::Artista(){
 
 Artista::~Artista(){
   cout<<"Listo"<<endl;
+}
+
+Artista::Artista(string nombre, int veces){
+  this->nombre=nombre;
+  this->veces=veces;
 }
 
 string Artista::getNombre(){
