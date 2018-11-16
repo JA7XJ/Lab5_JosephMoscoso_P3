@@ -13,7 +13,7 @@ class Playlist{
   private:
     string nombre;
     string descripcion;
-    vector<Cancion>* lista;
+    vector<Cancion*> lista;
   public:
     Playlist();
     ~Playlist();
@@ -22,7 +22,8 @@ class Playlist{
     void setNombre(string);
     string getDescripcion();
     void setDescripcion(string);
-    void agregar();
+    void setList(vector <Cancion*>);
+    void add(Cancion*);
 };
 
 #endif

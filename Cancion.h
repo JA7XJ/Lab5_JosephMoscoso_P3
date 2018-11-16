@@ -25,7 +25,7 @@ class Cancion{
     void setDuracion(int);
     int getVeces();
     void setVeces(int);
-    string toString();
+  //  string toString();
 };
 
 #endif

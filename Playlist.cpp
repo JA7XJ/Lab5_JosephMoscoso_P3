@@ -1,4 +1,4 @@
-#include "PlayList.h"
+#include "Playlist.h"
 #include "Cancion.h"
 
 #include<vector>
@@ -11,7 +11,7 @@ using std::string;
 using std::cout;
 using std::endl;
 
-Playlist::PlayList(){
+Playlist::Playlist(){
   nombre="";
   descripcion="";
 }
@@ -41,6 +41,10 @@ void Playlist::setDescripcion(string descripcion){
     this->descripcion=descripcion;
 }
 
-void Playlist::agregar(Cancion c){
+void Playlist::setList(vector<Cancion*> lista){
+   this->lista=lista;
+}
+
+void Playlist::add(Cancion* c){
     lista.push_back(c);
 }

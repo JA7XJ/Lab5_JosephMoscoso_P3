@@ -1,3 +1,6 @@
+#ifndef ARTISTA_H
+#define ARTISTA_H
+
 #include "Cancion.h"
 
 #include<string>
@@ -10,7 +13,7 @@ class Artista{
   private:
     string nombre;
     int veces;
-    vector<Cancion>* lista;
+    vector<Cancion*> lista;
   public:
     Artista();
     ~Artista();
@@ -19,7 +22,9 @@ class Artista{
     void setNombre(string);
     int getVeces();
     void setVeces(int);
-    void agregar();
+    //Cancion getLista();
+    void setList(vector <Cancion*>);
+    void agregar(Cancion*);
 };
 
 #endif

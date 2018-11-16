@@ -58,6 +58,6 @@ void Cancion::setVeces(int veces){
     this->veces=veces;
 }
 
-string Cancion::toString(){
-    return "Cancion"<<this->titulo;
-}
+/*string Cancion::toString(){
+    return "Cancion"<<titulo;
+}*/

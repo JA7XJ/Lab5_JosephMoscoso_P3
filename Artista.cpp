@@ -36,6 +36,13 @@ void Artista::setVeces(int veces){
     this->veces=veces;
 }
 
-void Playlist::agregar(Cancion c){
+/*Cancion Artista::getLista(){
+    return lista;
+}*/
+void Artista::setList(vector<Cancion*> lista){
+   this->lista=lista;
+}
+
+void Artista::agregar(Cancion* c){
     lista.push_back(c);
 }
