@@ -125,18 +125,25 @@ int main(){
       }
     }
     if (op==6) {
-      cout<<"Playlists: "<<endl;
-      for (int i = 0; i < rep.size(); i++) {
-         cout<<i<<")"<<rep[i]->getNombre()<<""<<endl;
+      if (rep.empty()) {
+      }else{
+        cout<<"Playlists: "<<endl;
+        for (int i = 0; i < rep.size(); i++) {
+          cout<<i<<")"<<rep[i]->getNombre()<<""<<endl;
+        }
+        cout<<"----------------------------------"<<endl;
       }
-      cout<<"----------------------------------"<<endl;
     }
     if (op==7) {
-      cout<<"Emisoras: "<<endl;
-      for (int i = 0; i < emi.size(); i++) {
-         cout<<i<<")"<<emi[i]->getNombre()<<""<<endl;
+      if (emi.empty()) {
+        /* code */
+      }else{
+        cout<<"Emisoras: "<<endl;
+        for (int i = 0; i < emi.size(); i++) {
+          cout<<i<<")"<<emi[i]->getNombre()<<""<<endl;
+        }
+        cout<<"----------------------------------"<<endl;
       }
-      cout<<"----------------------------------"<<endl;
     }
     if (op==8) {
       cout<<"En construccion"<<endl;
