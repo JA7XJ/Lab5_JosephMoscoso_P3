@@ -143,7 +143,18 @@ int main(){
       cout<<"----------------------------------"<<endl;
     }
     if (op==9) {
-      cout<<"En construccion"<<endl;
+      for (int i = 0; i < can.size(); i++) {
+          //if (can[i]->getGenero()==genero) {
+            //  emi[emi.size()-1]->add(can[i]);
+         cout<<i<<")"<<can[i]->getTitulo()<<""<<endl;
+          //}
+      }
+      cout<<"----------------------------------"<<endl;
+      cout<<"Ingrese posicion: ";
+      int posss=0;
+      cin>>posss;
+      cout<<"----------------------------------"<<endl;
+      cout<<"La cancion: "<<can[posss]->getTitulo()<<""<<endl;
       cout<<"----------------------------------"<<endl;
     }
     if (op==10) {
