@@ -139,10 +139,12 @@ int main(){
       cout<<"----------------------------------"<<endl;
     }
     if (op==8) {
-
+      cout<<"En construccion"<<endl;
+      cout<<"----------------------------------"<<endl;
     }
     if (op==9) {
-      /* code */
+      cout<<"En construccion"<<endl;
+      cout<<"----------------------------------"<<endl;
     }
     if (op==10) {
       on=0;
