@@ -90,14 +90,20 @@ int main(){
       string genero="";
       cin>>genero;
       emi.push_back(new Radio(nombre, genero));
-      for (int i = 0; i < can.size(); i++) {
-          if (can[i]->getGenero()==genero) {
-              emi[emi.size()-1]->add(can[i]);
-          }
+      if (can.empty()) {
+        cout<<"--------------------------------"<<endl;
+        cout<<"Radio creada con exito"<<endl;
+        cout<<"--------------------------------"<<endl;
+      }else{
+        for (int i = 0; i < can.size(); i++) {
+            if (can[i]->getGenero()==genero) {
+                emi[emi.size()-1]->add(can[i]);
+            }
+        }
+        cout<<"--------------------------------"<<endl;
+        cout<<"Radio creada con exito"<<endl;
+        cout<<"--------------------------------"<<endl;
       }
-      cout<<"--------------------------------"<<endl;
-      cout<<"Radio creada con exito"<<endl;
-      cout<<"--------------------------------"<<endl;
     }
     if (op==5) {
       if (rep.empty()) {
