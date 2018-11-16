@@ -1,5 +1,6 @@
 #include "cancion.h"
 #include "Playlist.h"
+#include "Artista.h"
 
 #include <iostream>
 using std::cout;
